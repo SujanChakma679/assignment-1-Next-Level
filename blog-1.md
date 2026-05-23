@@ -59,11 +59,11 @@ data[0].name;        // ❌ Error: Object is of type 'unknown'
 data();              // ❌ Error: Object is of type 'unknown'
 ```
 
-This is exactly the right behavior. You received data from an unpredictable source — an API, a file, user input — and TypeScript is forcing you to acknowledge that before proceeding. To actually use the value, you have to **narrow** its type.
+This is exactly the right behavior. We received data from an unpredictable source — an API, a file, user input — and TypeScript is forcing you to acknowledge that before proceeding. To actually use the value, we have to **narrow** its type.
 
 ---
 
-## Type Narrowing: Proving What You Have
+## Type Narrowing: Proving What We Have
 
 **Type narrowing** is the process of taking a broad or uncertain type and proving — through runtime checks — that it's something more specific. TypeScript watches these checks and automatically adjusts the type inside each branch. This is called **control flow analysis**.
 
@@ -201,10 +201,10 @@ The `unknown` version is more verbose — but every line of that verbosity is do
 
 ## Conclusion
 
-`any` is TypeScript with the safety net removed. It exists as an escape hatch for legacy code and incremental migration, not as a regular tool. Every time you write `any`, you're opting out of the thing that makes TypeScript worth using.
+`any` is TypeScript with the safety net removed. It exists as an escape hatch for legacy code and incremental migration, not as a regular tool. Every time we write `any`, we're opting out of the thing that makes TypeScript worth using.
 
-`unknown` is what you actually want when you're dealing with data from the outside world — API responses, user input, file contents, anything you can't vouch for at compile time. It forces you to be honest: *I don't know what this is yet, and I won't pretend otherwise.*
+`unknown` is what we actually want when we're dealing with data from the outside world — API responses, user input, file contents, anything you can't vouch for at compile time. It forces us to be honest: *I don't know what this is yet, and I won't pretend otherwise.*
 
-Type narrowing is the bridge. Through `typeof`, `instanceof`, `in`, and custom type guards, you progressively prove to TypeScript what a value is — and TypeScript rewards you with full type safety inside each proven branch.
+Type narrowing is the bridge. Through `typeof`, `instanceof`, `in`, and custom type guards, you progressively prove to TypeScript what a value is — and TypeScript rewards us with full type safety inside each proven branch.
 
-The pattern is simple: receive as `unknown`, narrow before use, and let the compiler catch everything you miss. That's the TypeScript contract working the way it was designed to.
+The pattern is simple: receive as `unknown`, narrow before use, and let the compiler catch everything we miss. That's the TypeScript contract working the way it was designed to.
