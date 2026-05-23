@@ -153,8 +153,6 @@ printArea(new Rectangle(4, 6)); // Area: 24.00
 
 ## Conclusion
 
-Here's the short version of all four pillars:
-
 | Pillar | One-line Summary |
 |---|---|
 | **Encapsulation** | Protect our data — hide what doesn't need to be seen |
