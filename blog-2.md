@@ -1,17 +1,16 @@
-
 # The Four Pillars of OOP in TypeScript — Simply Explained
 
 ## Introduction
 
-Object-Oriented Programming (OOP) has four core ideas that help you write cleaner, more organized code. They sound fancy, but each one solves a simple, everyday problem. Let's go through them one by one with straightforward TypeScript examples.
+Object-Oriented Programming (OOP) has four core ideas that help us write cleaner, more organized code. They sound fancy, but each one solves a simple, everyday problem. Let's go through them one by one with straightforward TypeScript examples.
 
 ---
 
-## 1. Encapsulation — Keep Your Data Protected
+## 1. Encapsulation — Keep Our Data Protected
 
 **The idea:** Hide the internal data of a class. Only let the outside world interact with it through controlled methods.
 
-**Why it helps:** If anyone can change your data directly, bugs become impossible to track. Encapsulation puts a fence around your data.
+**Why it helps:** If anyone can change our data directly, bugs become impossible to track. Encapsulation puts a fence around our data.
 
 ```typescript
 class BankAccount {
@@ -41,7 +40,7 @@ Nobody can tamper with `balance` directly. The only way in is through `deposit()
 
 **The idea:** Hide the complex details. Show only the simple interface that others need to use.
 
-**Why it helps:** You don't need to know how a coffee machine works internally — you just press a button. Abstraction works the same way in code.
+**Why it helps:** We don't need to know how a coffee machine works internally — we just press a button. Abstraction works the same way in code.
 
 ```typescript
 abstract class Notification {
@@ -114,7 +113,7 @@ dog.bark(); // Dog's own method → "Rex says: Woof!"
 
 **The idea:** Different classes can share the same method name, but each behaves differently when called.
 
-**Why it helps:** You can write one piece of code that works for many types — no messy `if/else` chains.
+**Why it helps:** We can write one piece of code that works for many types — no messy `if/else` chains.
 
 ```typescript
 class Shape {
@@ -154,12 +153,13 @@ printArea(new Rectangle(4, 6)); // Area: 24.00
 
 ## Conclusion
 
+Here's the short version of all four pillars:
 
 | Pillar | One-line Summary |
 |---|---|
-| **Encapsulation** | Protect your data — hide what doesn't need to be seen |
+| **Encapsulation** | Protect our data — hide what doesn't need to be seen |
 | **Abstraction** | Hide complexity — show only what others need to use |
 | **Inheritance** | Share code — child classes get parent logic for free |
 | **Polymorphism** | Flexibility — same method name, different behavior per class |
 
-Together, these four ideas keep your code organized, easy to change, and simple to understand — no matter how large the project gets.
+Together, these four ideas keep our code organized, easy to change, and simple to understand — no matter how large the project gets.
