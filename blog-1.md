@@ -199,19 +199,6 @@ The `unknown` version is more verbose — but every line of that verbosity is do
 
 ---
 
-## Quick Reference: `any` vs `unknown`
-
-| Behavior | `any` | `unknown` |
-|---|---|---|
-| Accepts any assigned value | ✅ | ✅ |
-| Allows property access without checks | ✅ (unsafe) | ❌ |
-| Allows calling as a function | ✅ (unsafe) | ❌ |
-| Requires narrowing before use | ❌ | ✅ |
-| Spreads unsafely to derived values | ✅ | ❌ |
-| Recommended for untyped external data | ❌ | ✅ |
-
----
-
 ## Conclusion
 
 `any` is TypeScript with the safety net removed. It exists as an escape hatch for legacy code and incremental migration, not as a regular tool. Every time you write `any`, you're opting out of the thing that makes TypeScript worth using.
